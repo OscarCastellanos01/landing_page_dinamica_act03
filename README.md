@@ -100,6 +100,13 @@ php-mvc/
 ├── .htaccess
 └── composer.json
 ```
+## Steps to follow to adapt the static landing page project to a dynamic one.
+1. **MVC project structure for PHP.**
+2. **Landing page template was integrated.**
+3. **Database analysis and structuring.**
+4. **Features were integrated dynamically.**
+5. **Pricing Cards were integrated dynamically.**
+6. **Testimonials were integrated dynamically and the user image with the ui-avatars api.**
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Logo de PHP" width="200" />
