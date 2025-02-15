@@ -2,10 +2,16 @@
 
 namespace Controllers;
 
+use Models\Feautures;
+
 class HomeController {
 
     public function index()
     {
-        echo view('home.index');
+        $features = Feautures::all();
+
+        echo view('home.index', [
+            'features' => $features
+        ]);
     }
 }
