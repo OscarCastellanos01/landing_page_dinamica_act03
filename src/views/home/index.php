@@ -60,3 +60,39 @@
         </div>
     </div>
 </section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="row g-4">
+            <?php foreach ($testimonials as $testimonial): ?>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img 
+                                src="https://ui-avatars.com/api/?name=<?php echo urlencode($testimonial['Testimonial_Author']); ?>&size=64"
+                                alt="Cliente 1" 
+                                class="testimonial-img mb-3"
+                            >
+                            <p 
+                                class="card-text"
+                            >
+                                "<?php echo htmlspecialchars($testimonial['Testimonial_Description']); ?>"
+                            </p>
+                            <h5 
+                                class="card-title mb-1"
+                            >
+                                <?php echo htmlspecialchars($testimonial['Testimonial_Author']); ?>
+                            </h5>
+                            <p 
+                                class="text-muted"
+                            >
+                                <?php echo htmlspecialchars($testimonial['Testimonial_JobPosition']); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
