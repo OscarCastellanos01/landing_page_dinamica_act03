@@ -1,0 +1,23 @@
+{
+    "name": "castellanos/php-mvc",
+    "description": "A simple PHP MVC project",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/OscarCastellanos01/php-mvc"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/app/",
+            "Controllers\\": "src/controllers/",
+            "Models\\": "src/models/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
